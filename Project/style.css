@@ -1,22 +1,28 @@
 @font-face {
   font-family: yekan-bakh-regular;
-  src: url(YekanBakh-Regular.ttf);
+  src: url(Fonts/YekanBakh-Regular.ttf);
 }
+
 @font-face {
   font-family: yekan-bakh-bold;
-  src: url(YekanBakh-Bold.ttf);
-  @font-face {
-    font-family: yekan-bakh-light;
-    src: url(yekan-bakh-light);
-  }
+  src: url(Fonts/YekanBakh-Bold.ttf);
 }
+
+@font-face {
+  font-family: yekan-bakh-light;
+  src: url(Fonts/YekanBakh-Light.ttf);
+}
+
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  max-width: 2500px;
+  max-width: 1800px;
 }
+
+/* ---------------------------- header ---------------------------- */
+
 header {
   width: 100%;
   height: 100px;
@@ -24,55 +30,79 @@ header {
   background-color: #fbebb5;
   padding: 1px;
 }
+
 .icon {
   font-size: 22px;
   margin-top: 26px;
 }
+
 .fa-cart-shopping {
   margin-right: 40px;
 }
+
 .fa-cart-shopping:hover {
-  color: rgb(56, 11, 99);
+  color: white;
+  cursor: pointer;
 }
+
 .fa-heart {
   margin-right: 3%;
 }
+
 .fa-heart:hover {
-  color: rgb(56, 11, 99);
+  color: white;
+  cursor: pointer;
 }
+
 .fa-magnifying-glass {
   margin-right: 3%;
 }
+
 .fa-magnifying-glass:hover {
-  color: rgb(56, 11, 99);
+  color: white;
+  cursor: pointer;
 }
+
 .fa-user-plus {
   margin-right: 3%;
 }
+
 .fa-user-plus:hover {
-  color: rgb(56, 11, 99);
+  color: white;
+  cursor: pointer;
 }
+
 .navar {
   font-family: yekan-bakh-regular;
   margin-right: 110px;
 }
+
 .navar:hover {
-  color: rgb(56, 11, 99);
+  color: white;
+  cursor: pointer;
 }
+
+/* ---------------------------- body ---------------------------- */
+
 body {
   direction: rtl;
 }
+
+/* ---------------------------- wallpaper asli ---------------------------- */
+
 #wallpaper {
   width: 100%;
-  height: 900px;
+  height: 850px;
   background-color: #fbebb5;
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: nowrap;
   white-space: nowrap;
+  padding-left: 5px;
 }
+
 #iphonewall {
   width: 100%;
   height: 100%;
@@ -84,13 +114,15 @@ body {
   align-items: last baseline;
   justify-content: flex-end;
 }
+
 #iphonewall img {
   display: flex;
   flex-direction: column;
   object-fit: contain;
 }
+
 #tozih-back {
-  width: 100%;
+  width: 50%;
   height: 100%;
   /* border: 1px solid black; */
   display: flex;
@@ -98,32 +130,40 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 20px;
   font-size: 20px;
 }
+
 .bold-wall {
   font-family: yekan-bakh-bold;
   font-size: 500%;
 }
+
 .thin-wall {
   font-family: yekan-bakh-regular;
   font-size: 200%;
 }
+
 .button-wall {
   font-size: 150%;
   border: none;
-  border-radius: 5px;
+  border-radius: 1000px;
   padding: 16px 30px;
   cursor: pointer;
+  background-color: white;
   top: 50%;
   left: 50%;
   font-family: yekan-bakh-bold;
 }
+
 .button-wall:hover {
   color: #fbebb5;
   background-color: black;
   font-family: yekan-bakh-bold;
 }
+
+/* ---------------------------- dastebandi asli ---------------------------- */
+
 .shop-daste {
   background-color: #faf4f4;
   width: 100%;
@@ -132,6 +172,7 @@ body {
   justify-content: center;
   padding: 50px 24px;
 }
+
 .shop-icon {
   width: 30%;
   gap: 24px;
@@ -143,6 +184,7 @@ body {
   flex-wrap: nowrap;
   text-align: center;
 }
+
 .iphone-image {
   width: 50%;
   height: 50%;
@@ -151,22 +193,44 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .iphone-image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
 .bold-font {
   font-size: 180%;
   font-family: yekan-bakh-bold;
   white-space: nowrap;
   padding-top: 30px;
 }
-.iphone-detail {
-  font-size: 90%;
-  font-family: yekan-bakh-regular;
-  padding-top: px;
+
+.dastebandi-detail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.dastebandi-mosh {
+  font-family: yekan-bakh-regular;
+  font-size: 15px;
+  margin-top: 30px;
+  width: 100px;
+  border-bottom: solid 1px black;
+}
+
+.dastebandi-mosh:hover {
+  border: solid 1px black;
+  font-family: yekan-bakh-bold;
+  padding: 2px;
+  cursor: pointer;
+}
+
+/* ---------------------------- pishnehad shegeft angiz ---------------------------- */
+
 .header-pishnehad {
   width: 100%;
   height: 150px;
@@ -177,12 +241,22 @@ body {
   text-align: center;
   white-space: nowrap;
   align-items: center;
+  margin-top: 50px;
 }
+
+.bold-font-pish {
+  font-size: 250%;
+  font-family: yekan-bakh-bold;
+  white-space: nowrap;
+  padding-top: 30px;
+}
+
 .thin-pishnehad {
   font-size: 130%;
   color: gray;
-  font-family: yekan-bakh-light;
+  font-family: yekan-bakh-regular;
 }
+
 .daste-pishnehad {
   display: flex;
   flex-direction: row;
@@ -192,6 +266,7 @@ body {
 
   padding: 20px 30px;
 }
+
 .card-pishnehad {
   width: 20%;
   height: auto;
@@ -204,16 +279,25 @@ body {
   gap: 40px;
   margin: 10px 30px;
   padding: 16px;
+  border-radius: 16px;
 }
+
+.card-pishnehad:hover {
+  box-shadow: 10px 10px 10px rgb(197, 196, 196);
+  cursor: pointer;
+}
+
 .img-pishnehad {
   width: 50%;
   height: 50%;
 }
+
 .img-pishnehad img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
+
 .detail-pishnehad {
   display: flex;
   width: 100%;
@@ -224,6 +308,7 @@ body {
   font-size: 18px;
   font-family: yekan-bakh-regular;
 }
+
 .price-pishnehad {
   display: flex;
   width: 100%;
@@ -233,13 +318,16 @@ body {
   white-space: wrap;
   font-size: 20px;
 }
+
 .bold-font-price {
   font-family: yekan-bakh-bold;
 }
+
 .takhfif {
   color: red;
   font-family: yekan-bakh-regular;
 }
+
 .footer-pish-por {
   display: flex;
   flex-direction: row;
@@ -250,10 +338,390 @@ body {
   font-size: 160%;
   padding: 30px;
 }
-.border-mosh{
+
+.border-mosh {
   width: 200px;
   border-bottom: solid 3px black;
 }
-.banner-home{
-  
+
+/* ---------------------------- wallpaper 2 ---------------------------- */
+
+.wallpaper2 {
+  margin-top: 30px;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: left;
+}
+
+.wallpaper2 img {
+  width: 90%;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 60px;
+  padding: 30px;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fbebb5;
+}
+
+.text-banner {
+  font-size: 400%;
+}
+
+.text-mac {
+  font-family: yekan-bakh-regular;
+}
+
+.text-shoar {
+  font-family: yekan-bakh-bold;
+}
+
+.button-banner {
+  border-radius: 12px;
+  font-size: 28%;
+  background-color: #fbebb5;
+  border: solid 2px black;
+  padding: 16px 30px;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  font-family: yekan-bakh-bold;
+}
+
+.button-banner:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* Section porfroosh mesle pishnehad zade shode style jadid nadare */
+
+
+/* ---------------------------- maqalat ---------------------------- */
+.maqalat {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.header-maqalat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.badane-maqalat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.card-maqalat {
+  width: 33%;
+  height: auto;
+  border-radius: 16px;
+  /* border: solid rgb(190, 187, 187) 1px; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 10px 30px;
+  padding: 16px;
+}
+
+.img-maqalat {
+  width: 100%;
+  height: auto;
+}
+
+.img-maqalat img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.detail-maqalat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.maqalat-titr {
+  font-family: yekan-bakh-regular;
+  font-size: 20px;
+}
+
+.maqalat-mosh {
+  font-family: yekan-bakh-bold;
+  font-size: 20px;
+  margin-top: 30px;
+  width: 40%;
+  border-bottom: solid 2px black;
+
+}
+
+.maqalat-mosh:hover {
+  border: solid 2px black;
+  cursor: pointer;
+}
+
+.maqalat-icon {
+  font-family: yekan-bakh-regular;
+  margin-top: 25px;
+}
+
+/* ---------------------------- gift card ---------------------------- */
+.section-gift {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-detail-gift {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-detail-gift img {
+  width: 20%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.matn-gift-titr {
+  font-family: yekan-bakh-bold;
+  font-size: 20px;
+}
+
+.matn-gift-tozih {
+  font-family: yekan-bakh-regular;
+  font-size: 20px;
+}
+
+.button-gift {
+  width: 10%;
+  height: 100%;
+  font-size: 18px;
+  color: grey;
+  border: solid 1px grey;
+  background-color: white;
+  padding: 10px;
+  border-radius: 500px;
+  font-family: yekan-bakh-regular;
+}
+
+.button-gift:hover {
+  color: #fbebb5;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* ---------------------------- Instagram ---------------------------- */
+.instagram {
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  position: relative;
+}
+
+.instagram img {
+  height: 450px;
+  width: 100%;
+  filter: opacity(30%);
+}
+
+.titr-insta {
+  font-size: 80px;
+  font-family: yekan-bakh-bold;
+  position: absolute;
+  top: 120px;
+  left: 36%;
+}
+
+.tozih-insta {
+  font-size: 20px;
+  font-family: yekan-bakh-regular;
+  position: absolute;
+  top: 240px;
+}
+
+.button-insta {
+  width: 15%;
+  height: 10%;
+  font-size: 20px;
+  border: none;
+  color: black;
+  box-shadow: 5px 5px 5px gray;
+  background-color: white;
+  padding: 10px;
+  border-radius: 500px;
+  font-family: yekan-bakh-regular;
+  position: absolute;
+  top: 290px;
+}
+
+.button-insta:hover {
+  background-color: gray;
+  color: #fbebb5;
+  cursor: pointer;
+}
+
+/* ---------------------------- footer ---------------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  font-family: yekan-bakh-regular;
+  margin-top: 40px;
+}
+
+.footer-1 {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer-4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer-2-1:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-2:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-3:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-4:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-5:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-1:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-2:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-3:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-4:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-4-1:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.enter-footer {
+  border-bottom: solid 1px grey;
+}
+
+input[type="email"] {
+  border: none;
+  width: 250px;
+  padding: 5px;
+  border-bottom: solid 1px grey;
+}
+
+.email-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.img-footer img {
+  width: 80px;
+  height: auto;
+}
+
+.addrres-footer {
+  margin-top: 30px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.addrres-footer hr {
+  width: 1400px;
 }
