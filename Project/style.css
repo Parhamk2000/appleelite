@@ -81,7 +81,14 @@ header {
   color: white;
   cursor: pointer;
 }
-
+#contact{
+  text-decoration: none;
+  color: black;
+}
+#contact:hover{
+  color: white;
+  cursor: pointer
+}
 /* ---------------------------- body ---------------------------- */
 
 body {
@@ -657,6 +664,11 @@ body {
 
 .footer-2-5:hover {
   font-family: yekan-bakh-bold;
+}
+
+#contact-footer{
+  text-decoration: none;
+  color: black;
 }
 
 .footer-3-1:hover {
