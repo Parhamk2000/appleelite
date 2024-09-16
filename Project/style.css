@@ -21,6 +21,10 @@
   max-width: 1800px;
 }
 
+body a{
+  text-decoration: none;
+}
+
 /* ---------------------------- header ---------------------------- */
 
 header {
@@ -78,6 +82,13 @@ header {
 }
 
 .navar:hover {
+  color: white;
+  cursor: pointer;
+}
+.navar a{
+  color: black;
+}
+.navar:hover a{
   color: white;
   cursor: pointer;
 }
@@ -179,7 +190,9 @@ body {
   justify-content: center;
   padding: 50px 24px;
 }
-
+.shop-daste a{
+  color: black;
+}
 .shop-icon {
   width: 30%;
   gap: 24px;

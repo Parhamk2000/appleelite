@@ -25,6 +25,10 @@ body {
   direction: rtl;
 }
 
+body a{
+  text-decoration: none;
+}
+
 /* ---------------------------- header ---------------------------- */
 
 header {
@@ -81,7 +85,15 @@ header {
   margin-right: 110px;
 }
 
+.navar a{
+  color: black;
+}
 .navar:hover {
+  color: #fbebb5;
+  cursor: pointer;
+}
+
+.navar:hover a{
   color: #fbebb5;
   cursor: pointer;
 }
