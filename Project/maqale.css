@@ -1,0 +1,124 @@
+@font-face {
+    font-family: yekan-bakh-regular;
+    src: url(Fonts/YekanBakh-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: yekan-bakh-bold;
+    src: url(Fonts/YekanBakh-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: yekan-bakh-light;
+    src: url(Fonts/YekanBakh-Light.ttf);
+  }
+  
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 1800px;
+  }
+  
+  body {
+    direction: rtl;
+  }
+  body a{
+    text-decoration: none;
+  }
+
+/* ---------------------------- header ---------------------------- */
+
+header {
+    width: 100%;
+    height: 100px;
+    /* border-bottom: solid; */
+    background-color: white;
+    padding: 1px;
+  }
+  
+  .icon {
+    font-size: 22px;
+    margin-top: 26px;
+  }
+  
+  .fa-cart-shopping {
+    margin-right: 40px;
+  }
+  
+  .fa-cart-shopping:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .fa-heart {
+    margin-right: 3%;
+  }
+  
+  .fa-heart:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .fa-magnifying-glass {
+    margin-right: 3%;
+  }
+  
+  .fa-magnifying-glass:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .fa-user-plus {
+    margin-right: 3%;
+  }
+  
+  .fa-user-plus:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .navar {
+    font-family: yekan-bakh-regular;
+    margin-right: 110px;
+    color: black;
+  }
+  .navar a{
+
+    color: black;
+  }
+  
+  .navar:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  .navar:hover a {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  /* ---------------------------- banner ---------------------------- */
+
+  .banner_contact {
+    width: 100%;
+    height: 400px;
+    filter: opacity(30%);
+    position: relative;
+  }
+
+  .contact {
+    font-size: 70px;
+    font-family: yekan-bakh-bold;
+    position: absolute;
+    top: 210px;
+    left: 660px;
+  }
+  
+  .contact_thin {
+    font-size: 30px;
+    font-family: yekan-bakh-regular;
+    position: absolute;
+    top: 310px;
+    left: 670px;
+  }

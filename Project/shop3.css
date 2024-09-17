@@ -1,0 +1,463 @@
+@font-face {
+    font-family: yekan-bakh-regular;
+    src: url(Fonts/YekanBakh-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: yekan-bakh-bold;
+    src: url(Fonts/YekanBakh-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: yekan-bakh-light;
+    src: url(Fonts/YekanBakh-Light.ttf);
+  }
+  
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 1800px;
+  }
+  
+  body {
+    direction: rtl;
+  }
+  body a{
+    text-decoration: none;
+  }
+
+/* ---------------------------- header ---------------------------- */
+
+header {
+    width: 100%;
+    height: 100px;
+    /* border-bottom: solid; */
+    background-color: white;
+    padding: 1px;
+  }
+  
+  .icon {
+    font-size: 22px;
+    margin-top: 26px;
+  }
+  
+  .fa-cart-shopping {
+    margin-right: 40px;
+  }
+  
+  .fa-cart-shopping:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .fa-heart {
+    margin-right: 3%;
+  }
+  
+  .fa-heart:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .fa-magnifying-glass {
+    margin-right: 3%;
+  }
+  
+  .fa-magnifying-glass:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .fa-user-plus {
+    margin-right: 3%;
+  }
+  
+  .fa-user-plus:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  .navar {
+    font-family: yekan-bakh-regular;
+    margin-right: 110px;
+  }
+  
+  .navar:hover {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  .navar:hover a {
+    color: #fbebb5;
+    cursor: pointer;
+  }
+  
+  /* ---------------------------- banner ---------------------------- */
+
+  .banner_contact {
+    width: 100%;
+    height: 400px;
+    filter: opacity(30%);
+    position: relative;
+  }
+
+  .contact {
+    font-size: 70px;
+    font-family: yekan-bakh-bold;
+    position: absolute;
+    top: 210px;
+    left: 630px;
+  }
+  
+  .contact_thin {
+    font-size: 30px;
+    font-family: yekan-bakh-regular;
+    position: absolute;
+    top: 310px;
+    left: 665px;
+  }
+
+  /* ---------------------------- filter ---------------------------- */
+
+  .filter{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: #faf4f4;
+    font-family: yekan-bakh-regular;
+    font-size: 30px;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+
+}
+#num{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    width: 60px;
+    height: 50px;
+    padding: 4px 22px;
+}
+
+/* ---------------------------- Sections ---------------------------- */
+  
+.bold-font-pish {
+    font-size: 250%;
+    font-family: yekan-bakh-bold;
+    white-space: nowrap;
+    padding-top: 30px;
+  }
+  
+  .thin-pishnehad {
+    font-size: 130%;
+    color: gray;
+    font-family: yekan-bakh-regular;
+  }
+  .daste-pishnehad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 40px;
+    padding: 20px 30px;
+  }
+  
+  .card-pishnehad {
+    width: 20%;
+    height: auto;
+    border: solid rgb(190, 187, 187) 1px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px 30px;
+    padding: 16px;
+    border-radius: 16px;
+  }
+  
+  .card-pishnehad:hover {
+    box-shadow: 10px 10px 10px rgb(197, 196, 196);
+    cursor: pointer;
+  }
+  
+  .img-pishnehad {
+    width: 50%;
+    height: 50%;
+  }
+  
+  .img-pishnehad img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .detail-pishnehad {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    white-space: wrap;
+    font-size: 18px;
+    font-family: yekan-bakh-regular;
+  }
+  
+  .price-pishnehad {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    white-space: wrap;
+    font-size: 20px;
+  }
+  
+  .bold-font-price {
+    font-family: yekan-bakh-bold;
+  }
+
+  /* ---------------------------- page number ---------------------------- */
+
+.page_number{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  font-family: yekan-bakh-regular;
+  text-align: center;
+  justify-content: center;
+  gap: 25px;
+}
+a{
+  color: black;
+}
+#asli{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #FBEBB5;
+}
+#asli:hover{
+  color: #FBEBB5;
+  cursor: pointer;
+  background-color: black;
+}
+#asli:hover a{
+  color: #FBEBB5;
+  cursor: pointer;
+  background-color: black;
+}
+.num{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #FFF9E5;
+}
+.num:hover{
+  color: #FBEBB5;
+  cursor: pointer;
+  background-color: black;
+}
+.num:hover a{
+  color: #FBEBB5;
+  cursor: pointer;
+  background-color: black;
+}
+.ne-ba{
+  width: 60px;
+  height: 20px;
+  display: flex;
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #FFF9E5;
+}
+.ne-ba:hover{
+  color: #FBEBB5;
+  cursor: pointer;
+  background-color: black;
+}
+.ne-ba:hover a{
+  color: #FBEBB5;
+  cursor: pointer;
+  background-color: black;
+}
+
+/* ---------------------------- tazmin ---------------------------- */
+.tazmin {
+  width: 100%;
+  height: 250px;
+  background-color: #faf4f4;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.daste_tazmin {
+  width: 33%;
+  height: 100%;
+}
+
+.titr {
+  font-size: 30px;
+  font-family: yekan-bakh-bold;
+}
+
+.neveshte {
+  font-size: 20px;
+  font-family: yekan-bakh-regular;
+  margin-top: 10px;
+}
+
+/* ---------------------------- footer ---------------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  font-family: yekan-bakh-regular;
+  margin-top: 40px;
+}
+
+.footer-1 {
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer-4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer-2-1:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-2:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-3:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-4:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-2-5:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-1:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-2:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-3:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-3-4:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.footer-4-1:hover {
+  font-family: yekan-bakh-bold;
+}
+
+.enter-footer {
+  border-bottom: solid 1px grey;
+}
+
+#email_footer {
+  border: none;
+  width: 250px;
+  padding: 5px;
+  border-bottom: solid 1px grey;
+}
+
+.email-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.img-footer img {
+  width: 80px;
+  height: auto;
+}
+
+.addrres-footer {
+  margin-top: 30px;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.addrres-footer hr {
+  width: 1400px;
+}

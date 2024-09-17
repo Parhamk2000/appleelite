@@ -173,8 +173,25 @@ body {
   left: 50%;
   font-family: yekan-bakh-bold;
 }
+.button-wall a{
+  font-size: 150%;
+  border: none;
+  color: black;
+  border-radius: 1000px;
+  padding: 16px 30px;
+  cursor: pointer;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  font-family: yekan-bakh-bold;
+}
 
 .button-wall:hover {
+  color: #fbebb5;
+  background-color: black;
+  font-family: yekan-bakh-bold;
+}
+.button-wall:hover a{
   color: #fbebb5;
   background-color: black;
   font-family: yekan-bakh-bold;
@@ -416,11 +433,19 @@ body {
   left: 50%;
   font-family: yekan-bakh-bold;
 }
+.button-banner a{
+  color: black;
+}
 
 .button-banner:hover {
   background-color: black;
   color: white;
 }
+.button-banner:hover a{
+  background-color: black;
+  color: white;
+}
+
 
 
 /* Section porfroosh mesle pishnehad zade shode style jadid nadare */
@@ -622,7 +647,9 @@ body {
   font-family: yekan-bakh-regular;
   margin-top: 40px;
 }
-
+.footer a{
+  color: black;
+}
 .footer-1 {
   display: flex;
   text-align: center;
