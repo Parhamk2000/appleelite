@@ -8,24 +8,51 @@
     <meta name="keywords" content="apple">
     <title>AppleElite/Homepage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="Pic/Homepagepic/faviconlogo.png">
+    <link rel="icon" type="image/x-icon" href="Pic/Homepagepic/logo.png">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
 </head>
 
 <body>
     <!----------------- header ----------------->
     <header>
-        <div class="icon"><i class="fa-solid fa-cart-shopping"></i>
+        <div class="icon">
+            <div class="icon_container_card"><i class="fa-solid fa-cart-shopping"></i>
+                <div class="card_shop">
+                    <div class="card-sec-1">
+                        <div>سبد خرید شما</div>
+                        <div><i class="fa-solid fa-circle-xmark"></i></div>
+                    </div>
+                    <hr>
+                    <div class="card-sec-2">
+                        <div class="img-card"><img src="Pic/Shop/phone/6.png" alt=""></div>
+                        <div><br>گوشی موبایل اپل مدل iPhone 14 Plus دو سیم کارت
+                            <br><p id="price_card_shop">46,599,000 تومان</p>
+                        </div>
+                        <div id="close-card"><i class="fa-solid fa-circle-xmark"></i></div>
+                    </div>
+                    <div class="card-sec-3">
+                        <div>جمع کل خرید</div>
+                        <div>46,599,000 تومان</div>
+                    </div>
+                    <hr>
+                    <div class="card-sec-4">
+                        <div><button>مشاهده</button></div>
+                        <div><button>پرداخت نهایی</button></div>
+                    </div>
+                </div>
+            </div>
+
             <!-- (((آیکن ها))) -->
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-user-plus"></i>
             <!-- (((نوار بالای صفحه))) -->
-            <span class="navar">خانه</span>
+            <span class="navar"><a href="index.html">خانه</a></span>
             <span class="navar"><a href="shop.html">فروشگاه</a></span>
-            <span class="navar">درباره ما</span>
+            <span class="navar"><a href="about.html">درباره ما</a></span>
             <span class="navar"><a id="contact" href="contact.html">ارتباط با ما</a></span>
         </div>
+
     </header>
 
     <!-- (((بنر بالای سایت))) -->
@@ -161,7 +188,9 @@
     </div>
     <div class="footer-pish-por">
         <div>
-            <p class="border-mosh">مشاهده بیشتر</p>
+            <a href="shop.html">
+                <p class="border-mosh">مشاهده بیشتر</p>
+            </a>
         </div>
     </div>
 
@@ -247,7 +276,9 @@
     </div>
     <div class="footer-pish-por">
         <div>
-            <p class="border-mosh">مشاهده بیشتر</p>
+            <a href="shop.html">
+                <p class="border-mosh">مشاهده بیشتر</p>
+            </a>
         </div>
     </div>
 
@@ -263,7 +294,8 @@
                 <div class="img-maqalat"><img src="Pic/Homepagepic/مقاله 3 copy.png" alt=""></div>
                 <div class="detail-maqalat">
                     <p class="maqalat-titr">چطور قابلیت های هوش مصنوعی اپل را در آیفون و مک فعال کنیم؟</p>
-                    <p class="maqalat-mosh">مشاهده بیشتر</p>
+                    <p class="maqalat-mosh"><a href="maqale1.html">مشاهده
+                            بیشتر</a></p>
                     <p class="maqalat-icon">4 روز پیش &nbsp;&nbsp;&nbsp;<i style='font-size:24px'
                             class='far'>&#xf133;</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7
                         دقیقه &nbsp;&nbsp;&nbsp;<i style='font-size:24px' class='far'>&#xf017;</i></p>
@@ -274,7 +306,8 @@
                 <div class="detail-maqalat">
                     <p class="maqalat-titr">اپل برای نخستین بار از جمع پنج برند برتر موبایل چین خارج شد؛جایگاه نخست
                         در...</p>
-                    <p class="maqalat-mosh">مشاهده بیشتر</p>
+                    <p class="maqalat-mosh"><a href="maqale2.html">مشاهده
+                            بیشتر</a></p>
                     <p class="maqalat-icon">4 روز پیش &nbsp;&nbsp;&nbsp;<i style='font-size:24px'
                             class='far'>&#xf133;</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4
                         دقیقه &nbsp;&nbsp;&nbsp;<i style='font-size:24px' class='far'>&#xf017;</i></p>
@@ -284,7 +317,8 @@
                 <div class="img-maqalat"><img src="Pic/Homepagepic/16pro copy.png" alt=""></div>
                 <div class="detail-maqalat">
                     <p class="maqalat-titr">آیفون 16 پرو احتمالا رنگ برنزی هم خواهد داشت</p>
-                    <p class="maqalat-mosh">مشاهده بیشتر</p>
+                    <p class="maqalat-mosh"><a href="maqale3.html">مشاهده
+                            بیشتر</a></p>
                     <p class="maqalat-icon">4 روز پیش &nbsp;&nbsp;&nbsp;<i style='font-size:24px'
                             class='far'>&#xf133;</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2
                         دقیقه &nbsp;&nbsp;&nbsp;<i style='font-size:24px' class='far'>&#xf017;</i></p>
@@ -365,7 +399,7 @@
             <p class="footer-2-1">پیوست ها</p>
             <p class="footer-2-2"><a href="index.html">خانه</a></p>
             <p class="footer-2-3"><a href="shop.html">فروشگاه</a></p>
-            <p class="footer-2-4">درباره ما</p>
+            <p class="footer-2-5"><a href="about.html">درباره ما</a></p>
             <p class="footer-2-5"><a href="contact.html">ارتباط با ما</a></p>
         </div>
         <div class="footer-3">
@@ -380,8 +414,8 @@
             </div>
             <div class="email-box"><input type="email" name="" id="">&nbsp;&nbsp;&nbsp;<span
                     class="enter-footer">ورود</span></div>
-            <div class="img-footer"><img src="Pic/Homepagepic/etemad.png" alt=""><img
-                    src="Pic/Homepagepic/etebar.png" alt=""><img src="Pic/Homepagepic/zarin copy.png" alt="">
+            <div class="img-footer"><img src="Pic/Homepagepic/etemad.png" alt=""><img src="Pic/Homepagepic/etebar.png"
+                    alt=""><img src="Pic/Homepagepic/zarin copy.png" alt="">
             </div>
         </div>
     </div>

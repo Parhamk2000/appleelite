@@ -39,10 +39,109 @@ header {
   font-size: 22px;
   margin-top: 26px;
 }
-
+.icon_container_card{
+ display: inline-block;
+ position: relative;
+}
 .fa-cart-shopping {
   margin-right: 40px;
+  position: relative;
 }
+.icon_container_card:hover .card_shop{
+  display: block;cursor: pointer;
+  transition-duration: 10s;
+}
+
+/* ----------- CARD SHOP ----------- */
+.card_shop{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  background-color: white;
+  width: 350px;
+  height: auto;
+  gap: 10px;
+}
+  
+.card-sec-1{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: yekan-bakh-bold;
+  font-size: 20px;
+  padding: 10px;
+}
+.fa-solid:hover{
+  color: red;
+  cursor: pointer;
+}
+.card-sec-2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-family: yekan-bakh-regular;
+  gap: 15px;
+  padding: 10px;
+
+}
+#price_card_shop{
+  color: blue;
+}
+.img-card{
+  width: 33%;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.img-card img{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+#close-card{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.card-sec-3{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: yekan-bakh-bold;
+}
+.card-sec-4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.card-sec-4 button{
+  width: auto;
+  height: 100%;
+  font-size: 16px;
+  color: black;
+  border: solid 1px black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 500px;
+  font-family: yekan-bakh-regular;
+}
+.card-sec-4 button:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+/*-------- continue ------ */
 
 .fa-cart-shopping:hover {
   color: white;
@@ -375,10 +474,19 @@ body {
   font-size: 160%;
   padding: 30px;
 }
-
+.footer-pish-por a{
+  color: black;
+}
 .border-mosh {
   width: 200px;
   border-bottom: solid 3px black;
+}
+
+.border-mosh:hover {
+  border: solid 1px black;
+  font-family: yekan-bakh-bold;
+  padding: 2px;
+  cursor: pointer;
 }
 
 /* ---------------------------- wallpaper 2 ---------------------------- */
@@ -457,7 +565,9 @@ body {
   flex-direction: column;
   margin-top: 90px;
 }
-
+.maqalat a{
+  color: black;
+}
 .header-maqalat {
   display: flex;
   flex-direction: column;
